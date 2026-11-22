@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Velvet Vault — a neon museum heist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #07060e;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+  }
+  #stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: radial-gradient(ellipse at 50% 30%, #17122b 0%, #07060e 70%);
+  }
+  canvas {
+    display: block;
+    width: min(1280px, 100vw);
+    height: auto;
+    aspect-ratio: 1280 / 720;
+    box-shadow: 0 0 60px rgba(190, 60, 220, 0.25), 0 0 0 1px #3a2b5c;
+    cursor: crosshair;
+    background: #0b0918;
+  }
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas id="game" width="1280" height="720"></canvas>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
